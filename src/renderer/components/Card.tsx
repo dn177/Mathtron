@@ -34,7 +34,7 @@ function Card({ cardtext, id }: { cardtext: string; id: number }) {
     >
       {isEditing ? (
         // add delimeter for display:false
-        <Latex macros={macros}> {`\\( ${text}\\)`}</Latex>
+        <Latex macros={macros}> {`\\(${text}\\)`}</Latex>
       ) : (
         <Latex macros={macros}>{text}</Latex>
       )}

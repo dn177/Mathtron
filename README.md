@@ -7,3 +7,16 @@ Click on an already pushed item and press any input (arrows count too) to toggle
 Press Shift + Enter or Escape in edit mode to save changes.
 
 New Notebooks can be created and switched via the select menu in the top left corner.
+
+# Latex
+
+Wrap Latex input in $$.
+
+Example:
+
+110 $\times$ 10 $\ne$ 20
+will render to:
+
+```latex
+110 \times 10 \ne 20
+```
