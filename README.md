@@ -20,6 +20,4 @@ Example:
 
 will render to:
 
-```latex
-$110 \times 10 \ne 20$
-```
+Inline equation: $110 \times 10 \ne 20$
