@@ -14,7 +14,10 @@ Wrap Latex input in $$.
 
 Example:
 
+```bash
 110 $\times$ 10 $\ne$ 20
+```
+
 will render to:
 
 ```latex
