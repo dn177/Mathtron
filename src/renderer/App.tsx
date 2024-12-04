@@ -16,12 +16,6 @@ function Main() {
 
   React.useEffect(() => {
     if (localStorage.getItem('default') !== '') {
-      console.log(
-        localStorage
-          .getItem('default')
-          .split(',')
-          .slice(0, localStorage.getItem('default').split(',').length - 1),
-      );
       setCards(
         localStorage
           .getItem('default')
