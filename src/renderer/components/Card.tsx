@@ -12,9 +12,9 @@ function Card({ cardtext, id }: { cardtext: string; id: number }) {
   function handleInput(event: React.SyntheticEvent) {
     if ((event.key === 'Enter' && event.shiftKey) || event.key === 'Escape') {
       setIsEditing(false);
-      console.log(event.target.textContent);
       setText(event.target.textContent);
-      console.log('handleInput', cards);
+      // console.log(event.target.textContent);
+      // console.log('handleInput', cards);
       setCards(
         cards.map((card, index) =>
           index === id ? event.target.textContent : card,

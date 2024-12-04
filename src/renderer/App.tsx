@@ -15,7 +15,7 @@ function Main() {
   const { cards, setCards } = React.useContext(CardContext);
 
   React.useEffect(() => {
-    if (localStorage.getItem('default') !== (undefined || null || '')) {
+    if (localStorage.getItem('default') !== null) {
       setCards(
         localStorage
           .getItem('default')
