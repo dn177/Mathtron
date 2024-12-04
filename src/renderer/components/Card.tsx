@@ -32,7 +32,7 @@ function Card({ cardtext, id }: { cardtext: string; id: number }) {
       onInput={(e) => handleInput(e)}
       onKeyDown={(e) => handleInput(e)}
     >
-      {isEditing ? (
+      {isEditing && text.split('$').length > 1 ? (
         // add delimeter for display:false
         <Latex macros={macros}> {`\\(${text}\\)`}</Latex>
       ) : (
