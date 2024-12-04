@@ -2,11 +2,11 @@ import * as React from 'react';
 import { CardContext } from '../context/CardContext';
 import { InputContext } from '../context/InputContext';
 
-function Inputarea() {
+function InputArea() {
   const { input, setInput } = React.useContext(InputContext);
   const { cards, setCards } = React.useContext(CardContext);
 
-  const handleKeyDown = (event) => {
+  const handleKeyDown = (event: React.KeyboardEvent) => {
     if ((event.key === 'Enter' && event.shiftKey) || event.key === 'Escape') {
       setCards([...cards, input]);
       setInput('');
@@ -36,4 +36,4 @@ function Inputarea() {
   );
 }
 
-export default Inputarea;
+export default InputArea;

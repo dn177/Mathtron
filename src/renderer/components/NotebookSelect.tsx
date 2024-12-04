@@ -12,7 +12,7 @@ function NotebookSelect() {
     React.useState<String>('default');
   const { cards, setCards } = React.useContext(CardContext);
 
-  function selectHandler(event: React.SyntheticEvent) {
+  function selectHandler(event: SelectChangeEvent) {
     event.preventDefault();
     if (event.target.value === 'Create new notebook') {
       setNotebooks([...notebooks, 'notebook' + (notebooks.length + 1)]);

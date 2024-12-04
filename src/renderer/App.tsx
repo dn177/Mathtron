@@ -6,7 +6,7 @@ import { CardContext, CardProvider } from './context/CardContext';
 import { InputProvider } from './context/InputContext';
 import { MacroProvider } from './context/MacroContext';
 import Card from './components/Card';
-import Inputarea from './components/Inputarea';
+import InputArea from './components/InputArea';
 import CalculationArea from './components/CalculationArea';
 import NotebookSelect from './components/NotebookSelect';
 import Settings from './components/Settings';
@@ -61,7 +61,7 @@ function Main() {
 
         <CalculationArea />
       </div>
-      <Inputarea />
+      <InputArea />
     </div>
   );
 }
