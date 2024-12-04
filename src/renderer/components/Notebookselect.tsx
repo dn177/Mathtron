@@ -4,7 +4,7 @@ import Select, { SelectChangeEvent } from '@mui/material/Select';
 import { MenuItem } from '@mui/material';
 
 //TODO: use electron-store instead of localstorage
-function Notebookselect() {
+function NotebookSelect() {
   const [notebooks, setNotebooks] = React.useState<String[]>(
     localStorage ? Object.keys({ ...localStorage }) : ['default'],
   );
@@ -65,15 +65,8 @@ function Notebookselect() {
         ))}
         <MenuItem value="Create new notebook">Create new notebook</MenuItem>
       </Select>
-
-      {/* <select name="" id="" onChange={selectHandler}>
-        {notebooks.map((notebook) => (
-          <option value={notebook}>{notebook}</option>
-        ))}
-        <option value="Create new notebook">Create new notebook</option>
-      </select> */}
     </div>
   );
 }
 
-export default Notebookselect;
+export default NotebookSelect;

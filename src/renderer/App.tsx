@@ -2,20 +2,20 @@ import * as React from 'react';
 import { MemoryRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import 'katex/dist/katex.min.css';
-import Card from './components/Card';
-import Inputarea from './components/Inputarea';
 import { CardContext, CardProvider } from './context/CardContext';
 import { InputProvider } from './context/InputContext';
 import { MacroProvider } from './context/MacroContext';
+import Card from './components/Card';
+import Inputarea from './components/Inputarea';
 import CalculationArea from './components/CalculationArea';
-import Notebookselect from './components/Notebookselect';
+import NotebookSelect from './components/NotebookSelect';
 import Settings from './components/Settings';
 
 function Main() {
   const { cards, setCards } = React.useContext(CardContext);
 
   React.useEffect(() => {
-    if (localStorage.getItem('default') !== '') {
+    if (localStorage.getItem('default') !== (undefined || null || '')) {
       setCards(
         localStorage
           .getItem('default')
@@ -30,7 +30,7 @@ function Main() {
       <h1>Mathtron</h1>
 
       <div className="top-bar">
-        <Notebookselect />
+        <NotebookSelect />
         <Link to="/settings">
           <svg
             xmlns="http://www.w3.org/2000/svg"
