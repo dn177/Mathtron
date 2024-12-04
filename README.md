@@ -1,6 +1,6 @@
 Math App with build in Latex. Aiming to one day make notetaking and math exercises more effective then on any other desktop app.
 
-# Manual
+# Instructions
 
 Press Shift + Enter or the Enter button to push your input from the input area to local storage.
 Click on an already pushed item and press any input (arrows count too) to toggle edit mode in which Latex will be displayed.
