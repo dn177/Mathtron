@@ -20,4 +20,4 @@ Example:
 
 will render to:
 
-Inline equation: $110 \times 10 \ne 20$
+$110 \times 10 \ne 20$
