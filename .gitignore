@@ -18,7 +18,7 @@ coverage
 .DS_Store
 
 # TODO
-.todo
+*.todo
 
 release/app/dist
 release/build
