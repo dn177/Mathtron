@@ -1,12 +1,16 @@
 import * as React from 'react';
 
-export const CardContext = React.createContext();
-export const CardProvider = (props) => {
+type CardContextType = {
+  cards: [];
+  setCards: React.Dispatch<React.SetStateAction<[]>>;
+};
+export const CardContext = React.createContext<CardContextType>();
+export const CardProvider = ({ children }: React.ReactNode) => {
   const [cards, setCards] = React.useState<[]>([]);
 
   return (
     <CardContext.Provider value={{ cards, setCards }}>
-      {props.children}
+      {children}
     </CardContext.Provider>
   );
 };
