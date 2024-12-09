@@ -1,4 +1,4 @@
-Math App with build in Latex. Aiming to one day make notetaking and math exercises more effective then on any other desktop app.
+Math App with build in Latex. Rather programmed spontaneously since i didn't find an app that suits my needs.
 
 # Instructions
 
