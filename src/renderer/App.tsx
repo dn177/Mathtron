@@ -17,12 +17,7 @@ function Main() {
 
   React.useEffect(() => {
     if (localStorage.getItem('default') !== null) {
-      setCards(
-        localStorage
-          .getItem('default')
-          .split(',')
-          .filter((el) => el !== (undefined || null || '')),
-      );
+      setCards(JSON.parse(localStorage.getItem('default')));
     }
   }, []);
 
@@ -37,7 +32,7 @@ function Main() {
         </Link>
       </div>
       <div className="container">
-        {cards.map((card, index) => (
+        {cards?.map((card, index) => (
           <Card cardtext={card} key={`card${card}`} id={index} />
         ))}
         <CalculationArea />

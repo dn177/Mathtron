@@ -18,20 +18,13 @@ function NotebookSelect() {
       setNotebooks([...notebooks, 'notebook' + (notebooks.length + 1)]);
       return;
     }
-
     // console.log('called selectHandler', event.target.value);
     // console.log('cards:', cards);
-
-    localStorage.setItem(currentNotebook, cards);
+    localStorage.setItem(currentNotebook, JSON.stringify(cards));
 
     setCurrentNotebook(event.target.value);
     if (localStorage.getItem(event.target.value) !== '') {
-      setCards(
-        localStorage
-          .getItem(event.target.value)
-          .split(',')
-          .filter((el) => el !== (undefined || null || '')),
-      );
+      setCards(JSON.parse(localStorage.getItem(event.target.value)));
     } else {
       setCards([]);
     }
