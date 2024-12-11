@@ -8,7 +8,7 @@ function InputArea() {
 
   const handleKeyDown = (event: React.KeyboardEvent) => {
     if ((event.key === 'Enter' && event.shiftKey) || event.key === 'Escape') {
-      cards !== null ? setCards([...cards, input]) : setCards([input]);
+      setCards([...(cards || []), input]);
       setInput('');
     }
   };
