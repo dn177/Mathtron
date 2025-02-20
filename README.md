@@ -5,7 +5,7 @@ Math Note App build with React + Electron. Made for rendering and editing Latex.
 # Instructions
 
 - <kbd>Shift</kbd> + <kbd>Enter</kbd> or <kbd>Enter</kbd> to push your input fron the input area to the local storage.
-- <kbd>Click</kbd>on an already pushed item and press any <kbd>key</kbd> (arrows count too) to toggle edit mode, in which Latex will be displayed.
+- <kbd>Click</kbd>on an already pushed item and press any <kbd>key</kbd> (arrows count too) to toggle edit mode, in which Latex will be displayed unrendered.
 - <kbd>Shift</kbd> + <kbd>Enter</kbd> or <kbd>Escape</kbd> in edit mode to save changes.
 - New Notebooks can be created and switched via the select menu in the top left corner.
 
